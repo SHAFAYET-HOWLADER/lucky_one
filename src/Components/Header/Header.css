@@ -11,6 +11,12 @@
     z-index: 999;
 }
 
+@media (max-width: 800px) {
+    .header {
+        display: none;
+    }
+}
+
 .header img {
     width: 5%;
 }
