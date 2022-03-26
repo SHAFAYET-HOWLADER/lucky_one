@@ -1,5 +1,21 @@
-
 .cart_icon {
     vertical-align: middle;
     color: lightsalmon;
+}
+
+.cart {
+    position: sticky;
+    top: 100px;
+}
+
+.cart img {
+    height: 30px;
+    width: 30px;
+    border-radius: 25px;
+    vertical-align: middle;
+}
+
+.delete_icon {
+    color: rgb(231, 38, 102);
+    cursor: pointer;
 }
