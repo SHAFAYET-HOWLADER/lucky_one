@@ -17,7 +17,7 @@ const Shopping = () => {
                }
             </div>
             <div className="shop_side_bar">
-                <Cart></Cart>
+                <Cart products={products}></Cart>
             </div>
         </div>
 
