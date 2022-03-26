@@ -22,13 +22,24 @@ const Shopping = () => {
     }
 
     const randomItems = ()=>{
+       if(carts.length === 0){
+         alert("please select one product");
+         return;
+       }
+       else{
         let rand = [];
         const mathRan = Math.floor(Math.random() * carts.length);
         rand.push(carts[mathRan] )
         setCarts(rand);
+       }
     }
     const remove = ()=>{
+        if(carts.length === 0){
+         alert("You did not select any product")
+        }
+        else{
         setCarts([]);
+        }
     }
     return (
         <div className='shop_container'>
@@ -40,7 +51,7 @@ const Shopping = () => {
             <div className="shop_side_bar">
             <h3>Selected watch appear here</h3>
                 {
-                    carts.map(cart=> <Cart cart={cart}></Cart>)
+                    carts.map(cart=> <Cart cart={cart} key={cart.index}></Cart>)
                 }
              <div className="flex">
                <button onClick={()=>randomItems()}>Select one</button>
