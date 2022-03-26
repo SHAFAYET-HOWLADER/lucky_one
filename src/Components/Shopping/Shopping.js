@@ -11,8 +11,18 @@ const Shopping = () => {
         .then(data =>setProducts(data))
     },[])
     const handler = (product)=>{
-         const newCart = [...carts,product];
-         setCarts(newCart);
+        const newCart = [...carts,product];
+        setCarts(newCart);
+    }
+
+    const randomItems = ()=>{
+        let rand = [];
+        const mathRan = Math.floor(Math.random() * carts.length);
+        rand.push(carts[mathRan] )
+        setCarts(rand);
+    }
+    const remove = ()=>{
+        setCarts([]);
     }
     return (
         <div className='shop_container'>
@@ -22,7 +32,14 @@ const Shopping = () => {
                }
             </div>
             <div className="shop_side_bar">
-                <Cart carts={carts}></Cart>
+        <h3>Selected watch</h3>
+                {
+                    carts.map(cart=> <Cart cart={cart}></Cart>)
+                }
+             <div className="flex">
+               <button onClick={randomItems}>choose</button>
+                <button onClick={remove}>remove</button>
+             </div>
             </div>
         </div>
 
