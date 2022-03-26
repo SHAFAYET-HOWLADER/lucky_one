@@ -1,5 +1,6 @@
 import './App.css';
 import Header from './Components/Header/Header';
+import Question from './Components/Question/Question';
 import Shopping from './Components/Shopping/Shopping';
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
        <h3>Select up to four watch</h3>
        </div>
      <Shopping></Shopping>
+     <Question></Question>
     </div>
   );
 }

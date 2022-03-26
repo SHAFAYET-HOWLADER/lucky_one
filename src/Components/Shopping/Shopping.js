@@ -49,17 +49,18 @@ const Shopping = () => {
                }
             </div>
             <div className="shop_side_bar">
-            <h3>Selected watch appear here</h3>
+            <h3>Selected watch</h3>
                 {
-                    carts.map(cart=> <Cart cart={cart} key={cart.index}></Cart>)
+                    carts.map(cart=> <Cart cart={cart} key={cart.id}></Cart>)
                 }
              <div className="flex">
-               <button onClick={()=>randomItems()}>Select one</button>
-                <button onClick={()=>remove()}>Clear Cart</button>
+               <button onClick={()=>randomItems()}>
+                   Choose
+               </button>
+                <button onClick={()=>remove()}>Clear</button>
              </div>
             </div>
         </div>
-
     );
 };
 

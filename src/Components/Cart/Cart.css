@@ -14,3 +14,8 @@
     color: rgb(231, 38, 102);
     cursor: pointer;
 }
+@media (max-width: 800px){
+    .cart{
+        padding: 0px 5px;
+    }
+ }
