@@ -13,8 +13,24 @@
 .shop_side_bar {
     background-color: #fff;
     box-shadow: 0px 0px 11px 2px #000;
+    position: sticky;
+    top: 0px;
 }
-.flex{
+
+.flex {
     display: flex;
     flex-direction: column;
+    padding: 30px 0px;
+}
+
+.flex button {
+    margin: 10px 50px;
+    padding: 5px 0px;
+    box-shadow: 0px 0px 5px 3px #000;
+    border-radius: 3px;
+    border: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
 }

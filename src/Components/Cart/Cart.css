@@ -3,11 +3,6 @@
     color: lightsalmon;
 }
 
-.cart {
-    position: sticky;
-    top: 100px;
-}
-
 .cart img {
     height: 30px;
     width: 30px;
